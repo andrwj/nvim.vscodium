@@ -81,12 +81,12 @@ moveoldcoc() { \
 }
 
 installplugins() { \
-  mv $HOME/.config/nvim/init.vim $HOME/.config/nvim/init.vim.tmp
-  mv $HOME/.config/nvim/utils/init.vim $HOME/.config/nvim/init.vim
+  mv $HOME/.config/nvim.vscodium/init.vim $HOME/.config/nvim.vscodium/init.vim.tmp
+  mv $HOME/.config/nvim.vscodium/utils/init.vim $HOME/.config/nvim.vscodium/init.vim
   echo "Installing plugins..."
   nvim --headless +PlugInstall +qall > /dev/null 2>&1
-  mv $HOME/.config/nvim/init.vim $HOME/.config/nvim/utils/init.vim
-  mv $HOME/.config/nvim/init.vim.tmp $HOME/.config/nvim/init.vim
+  mv $HOME/.config/nvim.vscodium/init.vim $HOME/.config/nvim.vscodium/utils/init.vim
+  mv $HOME/.config/nvim.vscodium/init.vim.tmp $HOME/.config/nvim.vscodium/init.vim
 }
 
 asktoinstallnode() { \
