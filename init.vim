@@ -7,60 +7,60 @@
 
 " General Settings
 if !exists('g:vscode')
-  source $HOME/.config/nvim/plug-config/polyglot.vim
+  source $HOME/.config/nvim.vscodium/plug-config/polyglot.vim
 endif
-source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/general/functions.vim
-source $HOME/.config/nvim/keys/mappings.vim
-source $HOME/.config/nvim/plug-config/vim-commentary.vim
-source $HOME/.config/nvim/plug-config/quickscope.vim
+source $HOME/.config/nvim.vscodium/vim-plug/plugins.vim
+source $HOME/.config/nvim.vscodium/general/settings.vim
+source $HOME/.config/nvim.vscodium/general/functions.vim
+source $HOME/.config/nvim.vscodium/keys/mappings.vim
+source $HOME/.config/nvim.vscodium/plug-config/vim-commentary.vim
+source $HOME/.config/nvim.vscodium/plug-config/quickscope.vim
 
 if exists('g:vscode')
   " VS Code extension
-  source $HOME/.config/nvim/vscode/settings.vim
-  source $HOME/.config/nvim/plug-config/easymotion.vim
+  source $HOME/.config/nvim.vscodium/vscode/settings.vim
+  source $HOME/.config/nvim.vscodium/plug-config/easymotion.vim
 else
 
   " Themes
-  source $HOME/.config/nvim/themes/syntax.vim
-  source $HOME/.config/nvim/themes/nvcode.vim
-  source $HOME/.config/nvim/themes/airline.vim
+  source $HOME/.config/nvim.vscodium/themes/syntax.vim
+  source $HOME/.config/nvim.vscodium/themes/nvcode.vim
+  source $HOME/.config/nvim.vscodium/themes/airline.vim
 
   " Plugin Configuration
-  source $HOME/.config/nvim/keys/which-key.vim
-  " source $HOME/.config/nvim/plug-config/rainbow.vim
-  source $HOME/.config/nvim/plug-config/rnvimr.vim
-  source $HOME/.config/nvim/plug-config/better-whitespace.vim
-  source $HOME/.config/nvim/plug-config/fzf.vim
-  source $HOME/.config/nvim/plug-config/sneak.vim
-  source $HOME/.config/nvim/plug-config/codi.vim
-  source $HOME/.config/nvim/plug-config/vim-wiki.vim
-  source $HOME/.config/nvim/plug-config/coc.vim
-  source $HOME/.config/nvim/plug-config/goyo.vim
-  source $HOME/.config/nvim/plug-config/vim-rooter.vim
-  source $HOME/.config/nvim/plug-config/start-screen.vim
-  source $HOME/.config/nvim/plug-config/gitgutter.vim
-  source $HOME/.config/nvim/plug-config/git-messenger.vim
-  source $HOME/.config/nvim/plug-config/closetags.vim
-  source $HOME/.config/nvim/plug-config/floaterm.vim
-  " source $HOME/.config/nvim/plug-config/vista.vim
-  source $HOME/.config/nvim/plug-config/xtabline.vim
-  source $HOME/.config/nvim/plug-config/far.vim
-  source $HOME/.config/nvim/plug-config/tagalong.vim
-  " source $HOME/.config/nvim/plug-config/illuminate.vim
-  source $HOME/.config/nvim/plug-config/bracey.vim
-  source $HOME/.config/nvim/plug-config/asynctask.vim
-  source $HOME/.config/nvim/plug-config/window-swap.vim
-  source $HOME/.config/nvim/plug-config/markdown-preview.vim
-  luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-  " source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
-  " source $HOME/.config/nvim/plug-config/ale.vim
+  source $HOME/.config/nvim.vscodium/keys/which-key.vim
+  " source $HOME/.config/nvim.vscodium/plug-config/rainbow.vim
+  source $HOME/.config/nvim.vscodium/plug-config/rnvimr.vim
+  source $HOME/.config/nvim.vscodium/plug-config/better-whitespace.vim
+  source $HOME/.config/nvim.vscodium/plug-config/fzf.vim
+  source $HOME/.config/nvim.vscodium/plug-config/sneak.vim
+  source $HOME/.config/nvim.vscodium/plug-config/codi.vim
+  source $HOME/.config/nvim.vscodium/plug-config/vim-wiki.vim
+  source $HOME/.config/nvim.vscodium/plug-config/coc.vim
+  source $HOME/.config/nvim.vscodium/plug-config/goyo.vim
+  source $HOME/.config/nvim.vscodium/plug-config/vim-rooter.vim
+  source $HOME/.config/nvim.vscodium/plug-config/start-screen.vim
+  source $HOME/.config/nvim.vscodium/plug-config/gitgutter.vim
+  source $HOME/.config/nvim.vscodium/plug-config/git-messenger.vim
+  source $HOME/.config/nvim.vscodium/plug-config/closetags.vim
+  source $HOME/.config/nvim.vscodium/plug-config/floaterm.vim
+  " source $HOME/.config/nvim.vscodium/plug-config/vista.vim
+  source $HOME/.config/nvim.vscodium/plug-config/xtabline.vim
+  source $HOME/.config/nvim.vscodium/plug-config/far.vim
+  source $HOME/.config/nvim.vscodium/plug-config/tagalong.vim
+  " source $HOME/.config/nvim.vscodium/plug-config/illuminate.vim
+  source $HOME/.config/nvim.vscodium/plug-config/bracey.vim
+  source $HOME/.config/nvim.vscodium/plug-config/asynctask.vim
+  source $HOME/.config/nvim.vscodium/plug-config/window-swap.vim
+  source $HOME/.config/nvim.vscodium/plug-config/markdown-preview.vim
+  luafile $HOME/.config/nvim.vscodium/lua/plug-colorizer.lua
+  " source $HOME/.config/nvim.vscodium/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
+  " source $HOME/.config/nvim.vscodium/plug-config/ale.vim
 endif
 
 " Add paths to node and python here
-if !empty(glob("~/.config/nvim/paths.vim"))
-  source $HOME/.config/nvim/paths.vim
+if !empty(glob("~/.config/nvim.vscodium/paths.vim"))
+  source $HOME/.config/nvim.vscodium/paths.vim
 endif
 
 " Better nav for omnicomplete TODO figure out why this is being overridden
